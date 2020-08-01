@@ -16,6 +16,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
+  <section>
     <form method="post" action="/api/subscriptions/new">
       <label for="plan">Plan</label>
       <select id="plan" data-recurly="plan">
@@ -117,6 +118,7 @@
       <button id="subscribe">Subscribe</button>
       <div id="errors"></div>
     </form>
+  </section>
     <script>
       // Configure recurly.js
       recurly.configure({
