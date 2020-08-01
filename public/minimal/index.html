@@ -36,6 +36,26 @@
           <input type="text" data-recurly="last_name" id="last_name" name="last-name">
         </div>
 
+        <div>
+          <label for="address1">Address</label>
+          <input type="text" data-recurly="address1" id="address1" name="address1">
+        </div>
+
+        <div>
+          <label for="city">City</label>
+          <input type="text" data-recurly="city" id="city" name="city">
+        </div>
+
+        <div>
+          <label for="postal_code">Post Code</label>
+          <input type="text" data-recurly="postal_code" id="postal_code" name="postal_code">
+        </div>
+
+        <div>
+          <label for="city">Country</label>
+          <input type="text" data-recurly="country" id="country" name="country">
+        </div>
+
         <button id="subscribe">Subscribe</button>
 
         <input type="hidden" data-recurly="token" name="recurly-token">
@@ -44,7 +64,7 @@
     <script>
       // Configure recurly.js
       recurly.configure({
-        publicKey: window.recurlyConfig.publicKey, // Set this to your own public key
+        publicKey: 'ewr1-BGHZnZnpBJfipDo2sAL4W4', // Set this to your own public key
         style: {
           all: {
             fontFamily: 'Open Sans',
